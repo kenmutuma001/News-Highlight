@@ -15,7 +15,6 @@ class ProdConfig(Config):
     pass
 
 
-
 class DevConfig(Config):
     DEBUG = True
 
