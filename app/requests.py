@@ -44,7 +44,7 @@ def process_sources(sources_list):
     '''
     Function that processes the news sources results and turns them into a list of objects
     Args:
-            sources_list: A list of dictionaries that contain sources details
+            sources_list: A list that contain sources details
     Returns:
             sources_results: A list of sources objects
     '''
