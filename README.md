@@ -16,7 +16,7 @@ This website allows a user to view news sources and read the latest news article
 * run the application with the ./start.sh command
 
 ## LINK
-
+https://news-highs.herokuapp.com/
 ## BUGS
 Their are no known bugs if any is found please make contact
 ## CONTACT
