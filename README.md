@@ -11,9 +11,12 @@ This website allows a user to view news sources and read the latest news article
  * BOOTSRAP
  * CSS
  ## SET_UP INSTRUCTIONS
-
+* clone the repository to your local repository
+* install the require python packages
+* run the application with the ./start.sh command
 
 ## LINK
+
 ## BUGS
 Their are no known bugs if any is found please make contact
 ## CONTACT
