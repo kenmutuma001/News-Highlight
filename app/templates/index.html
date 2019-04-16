@@ -1,23 +1,32 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro %}
-
-<!-- Styles block -->
-
-{% block styles%}
-{{super()}}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-{% endblock %}
 {% block content%}
-<div class="container">
 
-    <!-- News Section  -->
+{% block head %}
+{{super()}}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}">
+{% endblock %}
 
+<div style=" padding-top: 9px;  text-align: center; font-size: 13px; color: seashell;">
     <h3> NEWS HIGHLIGHTS </h3>
     <hr>
-
-    {{ macro.displaySourceList(highlights_sources)}}
-
 </div>
+
+<body style="background-color: rgb(5, 5, 5)">
+    <!-- News Section  -->
+
+    <div class="container">
+        {{ macro.displaySourceList(highlights_sources)}}
+        {{ macro.displaySourceList(international_sources)}}
+        {{ macro.displaySourceList(sports_sources)}}
+
+    </div>
+
+
+
+
+</body>
+
 
 
 {%endblock%}

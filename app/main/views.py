@@ -9,10 +9,14 @@ def index():
     '''
     view root page function that returns the index of the page and its data
     '''
-    highlights_sources = get_sources('highlights')
-    title = "KNN"
+    highlights_sources = get_sources('business')
+    sports_sources = get_sources('sports')
+    
 
-    return render_template('index.html', title=title, highlights_sources=highlights_sources)
+    title = "KNN"
+     
+
+    return render_template('index.html', title=title, highlights_sources=highlights_sources, sports_sources=sports_sources)
 
 
 @main.route('/sources/<id>')
@@ -21,5 +25,5 @@ def articles(id):
     view articles page
     '''
     articles = get_articles(id)
-    title = {id}
+    title = "KNN"
     return render_template('articles.html', title=title, articles=articles)
